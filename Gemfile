@@ -16,8 +16,10 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem "twitter-bootstrap-rails"
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+# gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -26,8 +28,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem "haml-rails", "~> 0.9"
 # gem 'angularjs-rails', '~> 1.4.0'
-# gem 'angular-rails-templates'
-gem 'chartjs-ror'
+gem 'angularjs-rails'
+gem 'chart-js-rails'
+gem 'angular-rails-templates'
+gem 'sprockets', '2.12.3'
+# gem 'bower-rails'
+# gem 'chartjs-ror'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

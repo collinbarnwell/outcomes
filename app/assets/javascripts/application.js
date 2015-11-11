@@ -11,7 +11,11 @@
 // about supported directives.
 
 
-//= require Chart
 //= require jquery
+//= require jquery_ujs
+//= require twitter/bootstrap
+//= require Chart
+//= require angular
+//= require angular-rails-templates
 //= require_tree .
 //= require_tree ./templates

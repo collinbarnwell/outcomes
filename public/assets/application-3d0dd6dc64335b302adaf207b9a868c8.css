@@ -1,0 +1,58 @@
+/* line 2, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: arvo;
+}
+
+/* line 8, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+#header {
+  width: 100%;
+  height: 60px;
+  background-color: #99CCFF;
+  margin: 0px;
+}
+/* line 13, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+#header h1 {
+  left: 5px;
+  position: relative;
+  top: 10px;
+  margin: 0px;
+  font-weight: normal;
+}
+/* line 21, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+#header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 27, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+.just-data {
+  display: none;
+}
+
+/* line 31, /home/collin/apps/outcomes/app/assets/stylesheets/style_guide.scss */
+.log-link {
+  position: relative;
+  bottom: 20px;
+  right: 5px;
+  float: right;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+
+
+
+
+
+ */
+
