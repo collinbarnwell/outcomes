@@ -18,10 +18,11 @@
     = f.input :start_date, :as => :date_picker, :size => 20
     = f.input :end_date, :as => :date_picker, :size => 20
     = f.input :ongoing
-    = f.input :status # should be drop down
-    = f.input :offer_accepted # should be dropdown
+    = f.input :status, as: :select, collection: ['declined', 'approved', 'pending']
+    = f.input :offer_accepted, as: :select, collection: ['yes', 'no', 'undecided']
+
     = f.input :industry
-    = f.input :employment_type
+    = f.input :employment_type, as: :select, collection: ['Full-Time', 'Part-Time']
     = f.input :salary
 
   = f.actions do
