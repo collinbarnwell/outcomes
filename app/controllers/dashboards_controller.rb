@@ -4,11 +4,6 @@ class DashboardsController < ApplicationController
   def home
     @outcomes = Outcome.all
 
-    @by_employer = []
-    Employer.all.each do |e|
-      color = "%06x" % (rand * 0xffffff)
-      @by_employer << {value: e.outcomes, color: color, label: e.name}
-    end
 
     @by_location = []
 

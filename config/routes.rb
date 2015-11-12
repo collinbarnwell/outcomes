@@ -13,6 +13,15 @@ Rails.application.routes.draw do
   root to: 'dashboards#home'
 
 
+  # api
+  get 'api/outcomes_by_employer' => 'charts#outcomes_by_employer'
+  get 'api/outcomes_by_location' => 'charts#outcomes_by_location'
+  get 'api/outcomes_by_industry' => 'charts#outcomes_by_industry'
+
+
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

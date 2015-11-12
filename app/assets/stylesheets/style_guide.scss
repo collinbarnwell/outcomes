@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: arvo;
+  font-weight: normal;
 }
 
 #header {
@@ -34,3 +35,21 @@ body {
   right: 5px;
   float: right;
 }
+
+.chart {
+  width: 300px;
+  height: 300px;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.chart-container {
+  margin: 50px;
+  min-width: 350px;
+  flex: 0;
+}
+
