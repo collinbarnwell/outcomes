@@ -17,9 +17,29 @@
   </div>
   <% end %>
 </div>
+<br>
+<br>
+<br>
+
+<div class="filter-container">
+  <h3 class="filter-item filter-label"><strong>Filters</strong></h3>
+  <div class="filters">
+    <span class="spacer">Industry:</span>
+    <oc-filter-dropdown filter-name="industry" options-url="/api/industries"></oc-filter-dropdown>
+
+    <span class="spacer">Employer:</span>
+    <oc-filter-dropdown filter-name="employer" options-url="/api/employers"></oc-filter-dropdown>
+
+    <span class="spacer">Location:</span>
+    <oc-filter-dropdown filter-name="location" options-url="/api/locations"></oc-filter-dropdown>
+  </div>
+</div>
+
 
 <div class="dashboard-container">
   <oc-pie-chart data-title="'Outcomes by Employer'" data-url="'/api/outcomes_by_employer'"></oc-pie-chart>
   <oc-pie-chart data-title="'Outcomes by Location'" data-url="'/api/outcomes_by_location'"></oc-pie-chart>
   <oc-pie-chart data-title="'Outcomes by Industry'" data-url="'/api/outcomes_by_industry'"></oc-pie-chart>
 </div>
+
+

@@ -76,3 +76,35 @@ table {
 table, th, td {
     border: 1px solid black;
 }
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spacer {
+  margin-left: 10px;
+}
+
+.filter-item {
+  margin: 10px;
+}
+
+oc-filter-dropdown {
+  position: relative;
+  bottom: 10px;
+}
+
+.filter-container {
+  padding: 10px;
+  max-width: 400px;
+  margin: 10px;
+  margin-left: 50px;
+  border:solid;
+  border-color: gray;
+}
+
+.filter-label {
+  position: relative;
+  bottom: 5px;
+}

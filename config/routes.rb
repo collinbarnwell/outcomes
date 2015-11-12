@@ -12,6 +12,9 @@ Rails.application.routes.draw do
   get 'api/outcomes_by_employer' => 'charts#outcomes_by_employer'
   get 'api/outcomes_by_location' => 'charts#outcomes_by_location'
   get 'api/outcomes_by_industry' => 'charts#outcomes_by_industry'
+  get 'api/industries' => 'charts#industries'
+  get 'api/employers' => 'charts#employers'
+  get 'api/locations' => 'charts#locations'
 
 
 
