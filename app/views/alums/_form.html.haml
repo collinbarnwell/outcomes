@@ -1,0 +1,9 @@
+= semantic_form_for @alum do |f|
+  = f.inputs do
+    = f.inputs :first_name
+    = f.inputs :last_name
+    = f.inputs :email
+    = f.inputs :username
+
+  = f.actions do
+    = f.action :submit, :as => :input

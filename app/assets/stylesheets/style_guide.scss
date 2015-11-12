@@ -53,3 +53,26 @@ body {
   flex: 0;
 }
 
+.outcome-link {
+  margin: 10px;
+  display: inline;
+  background-color: gray;
+  padding: 10px;
+}
+
+.outcome-actions {
+  position: relative;
+  left: 50px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}

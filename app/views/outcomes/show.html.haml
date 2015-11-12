@@ -1,0 +1,32 @@
+%p#notice= notice
+%ol
+  %li= 'Job Title: ' + @outcome.job_title.to_s
+  %li= 'Job Type: ' + @outcome.job_type.to_s
+  %li= 'Industry: ' + @outcome.industry.to_s
+  %li= 'Employment Type: ' + @outcome.employment_type.to_s
+  %li= 'Supervisor Name: ' + @outcome.supervisor_name.to_s
+  %li= 'Supervisor Email: ' + @outcome.supervisor_email.to_s
+  %li= 'Start Date: ' + @outcome.start_date.to_s
+  %li= 'End Date: ' + @outcome.end_date.to_s
+  %li= 'Ongoing: ' + @outcome.ongoing.to_s
+  %li= 'Salary: ' + @outcome.salary.to_s
+  %li= 'Status: ' + @outcome.status.to_s
+
+  %li= 'Offer Accepted? :' + @outcome.offer_accepted.to_s
+  %li= 'Student Email Address: ' + @outcome.alum.email.to_s
+  %li= 'Student Username: ' + @outcome.alum.username.to_s
+  %li= 'Student First Name: ' + @outcome.alum.first_name.to_s
+  %li= 'Student Last Name: ' + @outcome.alum.last_name.to_s
+
+  %li= 'Employer Name: ' + @outcome.employer.name.to_s
+  %li= 'Employer Email: ' + @outcome.employer.email.to_s
+
+  %li= 'Location Address: ' + @outcome.location.address.to_s
+  %li= 'Location City: ' + @outcome.location.city.to_s
+  %li= 'Location State: ' + @outcome.location.state.to_s
+  %li= 'Location Country: ' + @outcome.location.country.to_s
+
+
+= link_to 'Edit', edit_outcome_path(@outcome)
+\|
+= link_to 'Back', :back

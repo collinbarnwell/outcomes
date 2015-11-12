@@ -32,6 +32,8 @@ gem 'angularjs-rails'
 gem 'chart-js-rails'
 gem 'angular-rails-templates'
 gem 'sprockets', '2.12.3'
+gem 'formtastic', '~> 3.0'
+gem 'country_select'
 # gem 'bower-rails'
 # gem 'chartjs-ror'
 

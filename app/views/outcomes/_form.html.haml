@@ -1,0 +1,28 @@
+= semantic_form_for @outcome do |f|
+  = f.inputs do
+    = f.input :employer, member_label: :name
+    = link_to 'Add a new employer', new_employer_path
+    %br
+    %br
+    = f.input :alum, member_label: :full_name
+    = link_to 'Add a new alum', new_employer_path
+    %br
+    %br
+    = f.input :location, member_label: :address
+    = link_to 'Add a new location', new_location_path
+    %br
+    %br
+    = f.input :supervisor_name
+    = f.input :supervisor_email
+    = f.input :job_title
+    = f.input :start_date, :as => :date_picker, :size => 20
+    = f.input :end_date, :as => :date_picker, :size => 20
+    = f.input :ongoing
+    = f.input :status # should be drop down
+    = f.input :offer_accepted # should be dropdown
+    = f.input :industry
+    = f.input :employment_type
+    = f.input :salary
+
+  = f.actions do
+    = f.action :submit, :as => :input

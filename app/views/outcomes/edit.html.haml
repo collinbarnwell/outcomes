@@ -1,2 +1,7 @@
-%h1 Outcomes#edit
-%p Find me in app/views/outcomes/edit.html.haml
+%h1 Editing outcome
+
+= render 'form'
+
+= link_to 'Show', @outcome
+\|
+= link_to 'Back', :back

@@ -1,0 +1,56 @@
+.outcome-actions
+  = link_to new_outcome_path do
+    .outcome-link
+      Add a new outcome
+
+%br
+%br
+
+%table
+  %thead
+    %tr
+      %th
+      %th
+      %th
+
+      %th Job Title
+      %th Job Type
+      %th Industry
+      %th Employment Type
+      %th Supervisor Name
+      %th Start Date
+      %th End Date
+      %th Salary
+
+      %th Student Name
+
+      %th Location Address
+
+      %th Employer Name
+
+
+  %tbody
+    - @outcomes.each do |o|
+      %tr
+        %td= link_to 'Show', o
+        %td= link_to 'Edit', edit_outcome_path(o)
+        %td= link_to 'Destroy', o, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+        %td= o.job_title
+        %td= o.job_type
+        %td= o.industry
+        %td= o.employment_type
+        %td= o.supervisor_name
+        %td= o.start_date
+        %td= o.end_date
+        %td= o.salary
+
+        %td= o.alum.full_name
+
+        %td= o.employer.name
+
+        %td= o.location.address
+
+
+%br
+

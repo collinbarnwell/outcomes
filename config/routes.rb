@@ -1,13 +1,8 @@
 Rails.application.routes.draw do
-  get 'outcomes/create'
-
-  get 'outcomes/new'
-
-  get 'outcomes/edit'
-
-  get 'outcomes/update'
-
-  get 'outcomes/destroy'
+  resources :outcomes
+  resources :employers, except: :index
+  resources :alums, except: :index
+  resources :locations, except: :index
 
   devise_for :users
   root to: 'dashboards#home'
